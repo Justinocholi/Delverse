@@ -1,0 +1,629 @@
+<!-- Open Head -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Delverse Technologies - Your Partner in Digital Transformation" />
+    <title>Delverse Technologies</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="/delverse-app/src/style.css">
+</head>
+
+        <!-- Close Head -->
+
+        <!-- Open Body -->
+<body class="min-h-screen bg-gray-50">
+<!-- Arrow Button -->
+<button id="scrollTopBtn" 
+  class="hidden fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+  ↑
+</button>
+    <!-- Header -->
+
+     <!-- Navigation bar open --> 
+    <header class="top-0 w-full bg-white shadow-lg z-50">
+  <div class="max-w-6xl mx-auto px-4 py-3">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center">
+        <div class="w-24 h-24">
+          <img 
+            src="/logo.png" 
+            alt="Delverse Logo" 
+            class="object-contain w-full h-full" 
+          />
+        </div>
+      </div>
+                <nav class="hidden md:flex space-x-12">
+                    <a href="index.html">
+                    <button class="nav-link font-medium transition-colors text-blue-600">
+                        Home
+                    </button>
+                    </a>
+
+                    <a href="services.html">
+                    <button class="nav-link font-medium transition-colors text-gray-600 hover:text-blue-600">
+                        Services
+                    </button>
+                    </a>
+
+
+                    <a href="portfolio.html">
+                    <button class="nav-link font-medium transition-colors text-gray-600 hover:text-blue-600">
+                        Portfolio
+                    </button>
+                    </a>
+
+                    <a href="about.html">
+                    <button class="nav-link font-medium transition-colors text-gray-600 hover:text-blue-600">
+                        About Us
+                    </button>
+                    </a>
+
+                    <a href="contact.html">
+                    <button class="nav-link font-medium transition-colors text-gray-600 hover:text-blue-600">
+                        Contact Us
+                    </button>
+                    </a>
+
+                </nav>
+
+                <button class="md:hidden" onclick="toggleMobileMenu()" aria-label="Open menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                    <span class="sr-only">Menu</span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden mt-4 pb-4 hidden">
+                <button onclick="showPage('home'); toggleMobileMenu();" class="mobile-nav-link block w-full text-left py-2 px-4 rounded bg-blue-50 text-blue-600">
+                    Home
+                </button>
+                <button onclick="showPage('services'); toggleMobileMenu();" class="mobile-nav-link block w-full text-left py-2 px-4 rounded text-gray-600 hover:bg-gray-50">
+                    Services
+                </button>
+                <button onclick="showPage('portfolio'); toggleMobileMenu();" class="mobile-nav-link block w-full text-left py-2 px-4 rounded text-gray-600 hover:bg-gray-50">
+                    Portfolio
+                </button>
+                <button onclick="showPage('about'); toggleMobileMenu();" class="mobile-nav-link block w-full text-left py-2 px-4 rounded text-gray-600 hover:bg-gray-50">
+                    About Us
+                </button>
+                <button onclick="showPage('contact'); toggleMobileMenu();" class="mobile-nav-link block w-full text-left py-2 px-4 rounded text-gray-600 hover:bg-gray-50">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </header>
+<!-- Navigation bar closes -->
+ <!-- Video Background -->
+
+    <!-- Video Background -->
+<video autoplay muted loop playsinline class="video-background">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<!-- Overlay for readability (optional) -->
+<div class="overlay"></div>
+<!-- Hero Section -->
+
+
+<section class="relative text-white py-40">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-center min-h-96">
+      <div class="lg:w-1/2 lg:pr-8 fade-in-up">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+          Transform Your Business with <span class="text-yellow-400">Cutting-Edge Technology</span>
+        </h1>
+        <p class="text-lg mb-8 opacity-90">
+          From web development to AI implementation, we deliver comprehensive solutions that streamline operations and accelerate digital transformation for forward-thinking companies.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <button onclick="showPage('services')" class="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors">
+            Our Services
+          </button>
+          <button onclick="showPage('about')" class="border-2 border-white text-white px-8 py-3 rounded-md hover:bg-white hover:text-blue-900 transition-colors">
+            About Us
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                    <!-- Hero Section closes -->
+  
+<!-- About Section for homepage opens -->
+<section class="about-section" id="about">
+  <div class="about-container">
+    
+    <!-- Left Side Image -->
+    <div class="slide-image">
+      <img src="./image 2.jpg" alt="Professional woman working on laptop">
+    </div>
+
+     <!-- Right Side Text -->
+    <div class="about-text space-y-6">
+      <h2 class="text-3xl font-bold">
+        Delverse Solutions: Your Partner in 
+        <span class="text-blue-600">Digital Transformation</span>
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        We stand at the core of international networks to advance your strategic interests. 
+        Our mission is to craft innovative, tailored solutions that drive meaningful business growth.
+      </p>
+
+      <!-- Features as boxes -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="feature-card bg-blue-50 border border-blue-200 rounded-xl p-4 shadow-sm text-center hover:shadow-md transition">
+          <h3 class="font-semibold text-blue-800">Vision</h3>
+          <p class="text-sm text-gray-600">Global leader in AI-driven solutions</p>
+        </div>
+        <div class="feature-card bg-green-50 border border-green-200 rounded-xl p-4 shadow-sm text-center hover:shadow-md transition">
+          <h3 class="font-semibold text-green-800">Mission</h3>
+          <p class="text-sm text-gray-600">Crafting innovative, tailored solutions for growth</p>
+        </div>
+        <div class="feature-card bg-purple-50 border border-purple-200 rounded-xl p-4 shadow-sm text-center hover:shadow-md transition">
+          <h3 class="font-semibold text-purple-800">Values</h3>
+          <p class="text-sm text-gray-600">Innovation, Collaboration & Precision</p>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <button onclick="showPage('contact'); toggleMobileMenu();" 
+        class="btn-primary mt-6 px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
+        Learn More About Us
+      </button>
+    </div>
+  </div>
+</section>
+<!-- About Section for homepage closes -->
+
+            <!-- Services Section for homepage opens -->
+            <section class="py-16 bg-gray-50">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold mb-4">Our Core Services</h2>
+                        <p class="text-gray-600">Transforming your business with cutting-edge technology</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="text-blue-600 mb-4">
+                                <i data-lucide="brain" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">AI-Powered Solutions</h3>
+                            <p class="text-gray-600">Leverage cutting-edge artificial intelligence to transform your business processes and decision-making.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="text-blue-600 mb-4">
+                                <i data-lucide="globe" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Website Development</h3>
+                            <p class="text-gray-600">Create stunning, responsive websites that engage users and drive conversions.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="text-blue-600 mb-4">
+                                <i data-lucide="smartphone" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Web & Mobile App Development</h3>
+                            <p class="text-gray-600">Build powerful applications for web and mobile platforms with seamless user experiences.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="text-blue-600 mb-4">
+                                <i data-lucide="database" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Data Analytics</h3>
+                            <p class="text-gray-600">Transform raw data into actionable insights that drive strategic business decisions.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="text-blue-600 mb-4">
+                                <i data-lucide="users" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">IT Support</h3>
+                            <p class="text-gray-600">Protect your digital assets with comprehensive security solutions and reliable IT support.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="text-blue-600 mb-4">
+                                <i data-lucide="shield" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Business Consulting</h3>
+                            <p class="text-gray-600">Strategic technology consulting to optimize operations and accelerate digital transformation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services Section for homepage closes -->
+
+        <!-- Technologies Section for homepage opens -->
+<section class="py-16 bg-white" hidden>
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Technologies We Master</h2>
+      <p class="text-gray-600">
+        Built on a foundation of excellence with cutting-edge technologies
+      </p>
+    </div>
+
+    <!-- Horizontal marquee container -->
+    <div class="relative w-full overflow-hidden">
+      <div class="flex animate-marquee space-x-6">
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">React</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Flutter</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Node.js</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Python</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Django</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">TensorFlow</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">PyTorch</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">AWS</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Google Cloud</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Docker</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Kubernetes</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Project Management</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Graphics Design</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Video Editing</span>
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Ui/Ux Design</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Technologies Section for homepage closes -->
+
+    <!-- Testimonials Section for homepage opens -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <h2>What Our Clients Say</h2>
+            <p>Trusted by leading companies across various industries</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">"Delverse Technologies transformed our digital presence completely. Their team delivered a comprehensive website solution that not only looks professional but also significantly improved our operational efficiency. The AI-driven features they implemented have streamlined our engineering processes and enhanced our client engagement. Outstanding work!"</p>
+                    <div class="testimonial-author">Engr. Yakubu Samaila</div>
+                    <div class="testimonial-position">Managing Director/CEO</div>
+                    <div class="testimonial-company">MECA GROUP</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">"Working with Delverse was a game-changer for our consultancy firm. They understood our complex requirements and delivered a sophisticated platform that perfectly aligns with our business needs. Their attention to detail and commitment to excellence is remarkable. The new system has improved our project management capabilities tremendously."</p>
+                    <div class="testimonial-author">Dr. I.B. Gashinbaki</div>
+                    <div class="testimonial-position">Group Country Director</div>
+                    <div class="testimonial-company">DCP</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">"The educational platform Delverse developed for us exceeded all expectations. Their innovative approach to user experience design and robust backend architecture created a learning environment that both educators and students love. The platform's scalability and performance have been exceptional since launch."</p>
+                    <div class="testimonial-author">xxxxxx xxxxxxxx</div>
+                    <div class="testimonial-position">xxxxxx, xxxxxxx</div>
+                    <div class="testimonial-company">xxxxxxxxx </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section for homepage closes -->
+
+            <!-- CTA Section for homepage opens -->
+            <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white" hidden>
+                <div class="max-w-4xl mx-auto text-center px-4">
+                    <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
+                    <p class="text-lg mb-8 opacity-90">Contact us today and let's discuss how we can help you achieve your digital transformation goals.</p>
+                    <button onclick="showPage('contact')" class="bg-white text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors">
+                        Start Your Project
+                    </button>
+                    <button onclick="showPage('services')" class=" text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors">
+                        View our Services
+                    </button>
+                </div>
+            </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Company Info -->
+                <div>
+            <div class="w-16 h-16">
+          <img 
+             src="/logo.png" 
+                alt="Delverse Logo" 
+                class="object-contain w-full h-full" 
+                />
+                    </div>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        Delverse Technologies is a remote, technology-driven consulting firm specializing in AI-based software solutions. We empower businesses with tailored digital products that drive growth.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/delverse-technologies-limited/about/" class="text-gray-400 hover:text-white transition-colors">
+                            <span class="sr-only">LinkedIn</span>
+                             <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/delverse_tech" class="text-gray-400 hover:text-white transition-colors">
+                            <span class="sr-only">Twitter</span>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <button onclick="showPage('services')" class="text-gray-400 hover:text-white transition-colors">
+                                Services
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="showPage('about')" class="text-gray-400 hover:text-white transition-colors">
+                                About Us
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="showPage('portfolio')" class="text-gray-400 hover:text-white transition-colors">
+                                Portfolio
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-2"></i>
+                            delversetech@gmail.com
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                            +234 806 930 5155
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Plot 2542, Hassan Usman Katsina Street, Asokoro, Abuja, Nigeria</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Delverse Technologies Limited. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Owl Carousel Scripts -->
+
+    <script src="jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>    <script src="owl.carousel.min.js"></script>
+    <script>
+ // Show the button when user scrolls down
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 200) {
+      scrollTopBtn.classList.remove("hidden");
+    } else {
+      scrollTopBtn.classList.add("hidden");
+    }
+  };
+
+  // Smooth scroll back to top
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+          $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      smartSpeed: 800
+    });
+  });
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".carousel-item");
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    // Function to show a slide
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? "block" : "none";
+      });
+    }
+
+    // Show first slide initially
+    showSlide(currentSlide);
+
+    // Auto-slide every 4 seconds
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    }, 4000);
+  });
+           // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Initialize Owl Carousel
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                navText: ['<', '>'],
+                responsive: {
+                    0: {
+                        nav: false
+                    },
+                    768: {
+                        nav: true
+                    }
+                }
+            });
+        });
+
+        // Placeholder function for button clicks
+        function showPage(page) {
+            console.log('Navigating to:', page);
+            alert('Navigation to ' + page + ' page');
+        }
+
+const featureCards = document.querySelectorAll('.feature-card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  featureCards.forEach(card => observer.observe(card));
+
+        // Navigation functionality
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => page.classList.add('hidden'));
+            
+            // Show selected page
+            const targetPage = document.getElementById(pageId + 'Page');
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+            }
+            
+            // Update navigation active state
+            const navLinks = document.querySelectorAll('.nav-link');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            
+            navLinks.forEach(link => {
+                link.classList.remove('text-blue-600');
+                link.classList.add('text-gray-600', 'hover:text-blue-600');
+            });
+            
+            mobileNavLinks.forEach(link => {
+                link.classList.remove('bg-blue-50', 'text-blue-600');
+                link.classList.add('text-gray-600', 'hover:bg-gray-50');
+            });
+            
+            // Set active nav item
+            const activeNavLink = document.querySelector(`.nav-link:nth-child(${getPageIndex(pageId)})`);
+            const activeMobileNavLink = document.querySelector(`.mobile-nav-link:nth-child(${getPageIndex(pageId)})`);
+            
+            if (activeNavLink) {
+                activeNavLink.classList.add('text-blue-600');
+                activeNavLink.classList.remove('text-gray-600', 'hover:text-blue-600');
+            }
+            
+            if (activeMobileNavLink) {
+                activeMobileNavLink.classList.add('bg-blue-50', 'text-blue-600');
+                activeMobileNavLink.classList.remove('text-gray-600', 'hover:bg-gray-50');
+            }
+        }
+
+        function getPageIndex(pageId) {
+            const pages = ['home', 'services', 'technologies', 'portfolio', 'about', 'contact'];
+            return pages.indexOf(pageId) + 1;
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Portfolio filter functionality
+        function filterProjects(category) {
+            const projects = document.querySelectorAll('.project-card');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            
+            // Update filter buttons
+            filterBtns.forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+            });
+            
+            event.target.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+            event.target.classList.add('bg-blue-600', 'text-white');
+            
+            // Filter projects
+            projects.forEach(project => {
+                if (category === 'all' || project.dataset.category === category) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            alert("Thank you for your message! We'll get back to you within 24 hours.");
+            event.target.reset();
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show home page by default
+            showPage('home');
+            
+            // Re-initialize Lucide icons after dynamic content is loaded
+            setTimeout(() => {
+                lucide.createIcons();
+            }, 100);
+        });
+
+        // Smooth scrolling for page transitions
+        function smoothScrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Add smooth scroll to all page navigation
+        const originalShowPage = showPage;
+        showPage = function(pageId) {
+            originalShowPage(pageId);
+            smoothScrollToTop();
+        };
+    </script>
+</body>
+</html>
